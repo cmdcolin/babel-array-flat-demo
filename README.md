@@ -18,7 +18,7 @@ Array.prototype.flatMap & Array.prototype.flat
 
 ## Important note
 
-If you are developing a library, using @babel/polyfill or useBuiltIns: usage with corejs pollutes the global scope. If you read the documentation very closely, you CANNOT use Array.prototype.flat, or Array.prototype.includes, or other great helper methods. The general method for getting some extra babel ability without polluting global scope is to use @babel/plugin-transform-runtime but this cannot be done for "instance methods"
+If you are developing a library, using @babel/polyfill or useBuiltIns: usage with corejs pollutes the global scope. If you read the documentation very closely, you CANNOT use Array.prototype.flat, or Array.prototype.includes, or other great helper methods without polyfilling and polluting the global scope. The general method for getting some extra babel ability without polluting global scope is to use @babel/plugin-transform-runtime but this cannot be done for "instance methods"
 
 Parse this section from the babel docs closely to see what I mean https://babeljs.io/docs/en/babel-polyfill
 
