@@ -2,7 +2,7 @@
 
 This demonstrates usage of Array.prototype.flat and compiling with babel 7, babel polyfill, and core-js
 
-The @babel/polyfill and core-js@3 are added as main dependencies
+The core-js@3 is added as runtime dependency. Alternatively, @babel/polyfill could be added as one and then we could import @babel/polyfill.
 
 The babel preset env uses useBuiltIns: usage to import dependencies where needed instead of manually importing @babel/polyfill in the codebase
 
