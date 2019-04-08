@@ -12,7 +12,6 @@
     "@babel/preset-env": "^7.4.2"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.4.0",
     "core-js": "3"
   }
 }
